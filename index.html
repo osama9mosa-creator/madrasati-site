@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5145cd">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="مدرستي"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-180.png"><link rel="icon" type="image/png" href="./icon-192.png">
+<title>مدرستي | دورات تعليمية</title>
+<style>
+:root{--ink:#1c2440;--muted:#70798e;--brand:#5145cd;--paper:#f7f8fc;--line:#e7e9f1;--green:#178b69}
+*{box-sizing:border-box} [hidden]{display:none!important} :focus-visible{outline:3px solid #8b7cf6;outline-offset:3px} html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input{font:inherit} button:disabled{opacity:.55;cursor:not-allowed}button,a{cursor:pointer}a{text-decoration:none;color:inherit}.announcement{background:#28234d;color:#fff;text-align:center;padding:10px 14px;font-size:13px}.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.header-in{max-width:1180px;margin:auto;padding:16px 22px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:10px;min-width:150px}.brand-icon{display:grid;place-items:center;background:#eceaff;color:var(--brand);width:42px;height:42px;border-radius:14px;font-size:23px}.brand b{display:block;font-size:20px}.brand small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.nav{display:flex;gap:25px;color:#626b80;font-size:14px;flex:1}.header-right{display:flex;gap:10px;align-items:center}.search{display:flex;align-items:center;gap:8px;background:#f5f6fa;border:1px solid var(--line);padding:10px 12px;border-radius:12px;width:215px}.search input{border:0;outline:0;background:transparent;width:100%;min-width:0}.cart-btn,.primary,.secondary,.add{border:0;border-radius:12px;padding:11px 16px;font-weight:bold;display:inline-flex;align-items:center;justify-content:center;gap:8px}.cart-btn{background:#efedff;color:var(--brand);white-space:nowrap}.cart-btn span{background:var(--brand);color:white;border-radius:99px;min-width:21px;padding:2px 5px;font-size:11px}.hero{max-width:1180px;margin:35px auto 20px;padding:45px 28px 32px;display:grid;grid-template-columns:1fr .9fr;gap:45px;align-items:center;background:linear-gradient(125deg,#f7f6ff,#f1f3ff 58%,#fff8ef);border:1px solid #eeecff;border-radius:30px;overflow:hidden}.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e6e1ff;color:var(--brand);border-radius:30px;padding:9px 13px;font-size:12px}.dot{width:7px;height:7px;background:#1da779;border-radius:50%}.hero h1{font-size:clamp(32px,4vw,52px);line-height:1.35;margin:20px 0 12px;letter-spacing:-1.5px}.hero h1 span{color:var(--brand)}.hero p{font-size:15px;line-height:2;color:#697187;max-width:550px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.primary{background:var(--brand);color:#fff;box-shadow:0 8px 18px #5145cd28}.primary:hover{background:#4035b5}.secondary{background:white;border:1px solid var(--line);color:#464d62}.proof{display:flex;gap:12px;align-items:center;margin-top:25px;font-size:12px;color:#777f91}.stars{color:#e4a62c;letter-spacing:2px}.hero-art{position:relative;min-height:310px;display:grid;place-items:center}.lesson-window{width:min(100%,400px);background:#fff;border-radius:24px;box-shadow:0 24px 70px #35306922;padding:12px;transform:rotate(-2deg)}.window-top{display:flex;align-items:center;gap:5px;padding:7px 8px 12px;color:#7e8495;font-size:11px}.window-top i{width:7px;height:7px;background:#ddd;border-radius:50%}.window-top span{margin-right:auto}.lesson-scene{height:220px;border-radius:17px;background:linear-gradient(135deg,#7668e7,#b9adff 55%,#ffcf9f);position:relative;overflow:hidden;display:grid;place-items:center}.shape{position:absolute;border-radius:50%;opacity:.7}.shape.one{width:190px;height:190px;background:#ffe5ae;top:-55px;right:-30px}.shape.two{width:140px;height:140px;background:#fff;bottom:-65px;left:-10px}.scene-title{position:relative;font-size:28px;font-weight:bold;color:#34236e;text-align:center;line-height:1.5}.play{position:absolute;bottom:14px;left:14px;background:#fff;color:var(--brand);width:42px;height:42px;border-radius:50%;display:grid;place-items:center}.floating{position:absolute;background:#fff;border:1px solid var(--line);box-shadow:0 12px 30px #30304d12;padding:13px 15px;border-radius:15px;font-size:12px}.floating b{display:block;margin-bottom:5px}.floating small{color:var(--muted)}.f1{top:28px;right:0}.f2{bottom:28px;left:0}.trust{max-width:1180px;margin:22px auto 55px;display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:0 22px}.trust div{display:flex;gap:12px;align-items:center;background:white;border:1px solid var(--line);border-radius:16px;padding:17px}.trust-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#f0eeff;color:var(--brand);font-size:20px;flex-shrink:0}.trust b{display:block;font-size:13px}.trust small{display:block;color:var(--muted);font-size:11px;margin-top:6px}.section{max-width:1180px;margin:0 auto;padding:0 22px 60px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:25px}.eyebrow{font-size:12px;color:var(--brand);font-weight:bold}.section h2{font-size:30px;margin:10px 0}.section h2 span{color:var(--brand)}.section-head p{margin:0;color:var(--muted);font-size:13px}.filters{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:white;color:#737b8e;border-radius:30px;padding:9px 16px;font-size:12px}.filter.active{background:var(--brand);color:#fff;border-color:var(--brand)}.count{margin-right:auto;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 15px 35px #24254b0c}.cover{height:185px;position:relative;display:grid;place-items:center;overflow:hidden}.cover.violet{background:linear-gradient(135deg,#ded8ff,#9281ee)}.cover.green{background:linear-gradient(135deg,#d4f4df,#6ec49a)}.cover.orange{background:linear-gradient(135deg,#ffe2bd,#f29a62)}.cover.pink{background:linear-gradient(135deg,#ffdbed,#d984bc)}.cover.blue{background:linear-gradient(135deg,#d7e8ff,#81b4f1)}.cover.yellow{background:linear-gradient(135deg,#fff0bc,#e5c454)}.cover:before,.cover:after{content:"";position:absolute;border:1px solid #ffffff8a;border-radius:50%;width:200px;height:200px}.cover:after{width:130px;height:130px}.cover-symbol{position:relative;z-index:1;font-size:64px;color:#fff;text-shadow:0 5px 18px #44356b30}.tag{position:absolute;top:13px;right:13px;background:#ffffffd9;padding:7px 10px;border-radius:20px;font-size:11px}.cover .save{position:absolute;top:12px;left:12px;background:#ffffffd9;border:0;border-radius:50%;width:33px;height:33px;font-size:19px;color:#635b7c}.body{padding:17px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.rating{color:#d99a20}.title{display:block;font-weight:bold;font-size:17px;line-height:1.6;margin:11px 0 6px;background:none;border:0;padding:0;text-align:right;color:var(--ink)}.instructor{color:var(--muted);font-size:12px}.stats{display:flex;gap:15px;margin:17px 0;color:#7b8294;font-size:11px}.foot{border-top:1px solid #f0f1f6;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:8px}.price strong{font-size:18px}.price del{display:block;font-size:11px;color:#9da2b0;margin-top:4px}.add{background:#f0eeff;color:var(--brand);padding:10px 12px;font-size:12px}.add.done{background:#e5f7ef;color:var(--green)}.banner{max-width:1136px;margin:0 auto 60px;padding:35px 40px;border-radius:28px;background:#28234d;color:#fff;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}.banner h2{font-size:31px;line-height:1.6;margin:12px 0}.banner p{color:#c5c3dc;line-height:2;font-size:13px}.banner-points{display:grid;gap:14px}.banner-points div{background:#ffffff0d;border:1px solid #ffffff18;border-radius:14px;padding:15px 18px}.banner-points b{display:block;font-size:13px}.banner-points small{display:block;color:#c5c3dc;margin-top:7px}.steps{max-width:1180px;margin:0 auto;padding:0 22px 60px}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:25px}.step-num{font-size:12px;color:var(--brand);font-weight:bold}.step h3{margin:20px 0 10px}.step p{color:var(--muted);font-size:13px;line-height:1.9}.faq{max-width:900px;margin:0 auto;padding:0 22px 60px}.faq h2{text-align:center}.faq details{background:white;border:1px solid var(--line);border-radius:13px;padding:17px 19px;margin:10px 0}.faq summary{cursor:pointer;font-weight:bold;font-size:14px}.faq details p{color:var(--muted);font-size:13px;line-height:1.9}.footer{background:#fff;border-top:1px solid var(--line);padding:35px 22px 20px}.footer-in{max-width:1136px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer p,.footer small{color:var(--muted);font-size:12px;line-height:1.9}.footer-bottom{max-width:1136px;margin:25px auto 0;border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px}.demo{display:inline-block;color:#a14c15;background:#fff2e7;border:1px solid #ffe1c8;padding:5px 9px;border-radius:8px;font-size:10px}.toast{position:fixed;bottom:20px;right:20px;z-index:20;background:#222344;color:#fff;padding:14px 17px;border-radius:13px;box-shadow:0 10px 30px #1112;max-width:min(480px,calc(100vw - 40px));font-size:13px;line-height:1.7}.overlay{position:fixed;inset:0;background:#15162b77;z-index:15;display:flex;justify-content:flex-start}.drawer{width:min(440px,100%);height:100%;background:white;padding:22px;display:flex;flex-direction:column;box-shadow:0 0 50px #1112}.drawer-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:17px}.drawer-head h2{font-size:20px;margin:0 0 5px}.muted{color:var(--muted);font-size:12px}.close{border:0;background:#f2f3f8;border-radius:10px;width:38px;height:38px;font-size:23px}.cart-list{overflow:auto;flex:1}.cart-row{display:flex;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.mini-cover{width:70px;height:70px;border-radius:12px;display:grid;place-items:center;font-size:28px;flex-shrink:0}.cart-row-info{flex:1}.cart-row-info b{display:block;font-size:13px;line-height:1.7}.cart-row-info strong{display:block;margin:6px 0}.qty{display:flex;align-items:center;gap:12px;font-size:12px}.qty button{border:1px solid var(--line);background:white;border-radius:7px;width:26px;height:26px}.remove{margin-right:auto;color:#c04c56;border:0;background:none}.cart-bottom{border-top:1px solid var(--line);padding-top:18px}.cart-total{display:flex;justify-content:space-between;font-size:16px;font-weight:bold;margin-bottom:12px}.cart-bottom p{font-size:11px;line-height:1.8;color:var(--muted)}.full{width:100%}.empty{margin:auto;text-align:center;display:grid;justify-items:center;gap:12px;color:var(--muted)}.empty b{color:var(--ink)}.modal{margin:auto;background:white;border-radius:22px;width:min(620px,calc(100vw - 24px));max-height:90vh;overflow:auto;position:relative}.modal-cover{height:210px;display:grid;place-items:center;font-size:75px;position:relative}.modal-content{padding:25px}.modal-content h2{margin:9px 0;font-size:24px}.modal-content p{color:var(--muted);line-height:2;font-size:14px}.modal-details{display:flex;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:18px 0}.modal-price{font-size:22px;font-weight:bold;margin-bottom:15px}.notice-box{background:#fff5e8;border:1px solid #ffdfb7;color:#7c4b19;padding:12px;border-radius:12px;font-size:12px;line-height:1.8;margin:12px 0}
+@media(max-width:900px){.hero{margin:20px 14px;grid-template-columns:1fr;gap:15px;padding:28px 22px}.hero-art{min-height:300px}.trust{grid-template-columns:repeat(2,1fr);margin-bottom:40px}.grid{grid-template-columns:repeat(2,1fr)}.banner{margin:0 14px 45px;padding:28px;grid-template-columns:1fr}.nav{display:none}.header-in{padding:13px 15px;gap:12px}.search{width:min(210px,32vw)}}
+@media(max-width:600px){.announcement{font-size:11px}.header-in{flex-wrap:wrap}.brand{flex:1}.header-right{width:100%}.search{flex:1;width:auto}.hero{padding:24px 18px}.hero h1{font-size:34px}.hero p{font-size:13px}.hero-art{min-height:260px}.lesson-window{width:90%}.lesson-scene{height:175px}.floating{padding:9px;font-size:10px}.f1{right:-2px}.f2{left:-2px}.trust{padding:0 14px;gap:8px}.trust div{padding:12px;gap:8px}.trust b{font-size:11px}.trust small{font-size:10px}.trust-icon{width:34px;height:34px}.section{padding:0 14px 45px}.section h2{font-size:24px}.section-head{align-items:start}.section-head p{line-height:1.8}.section-head .view-all{display:none}.grid{grid-template-columns:1fr;gap:14px}.cover{height:200px}.count{width:100%;margin-right:0}.banner{padding:24px 20px}.banner h2{font-size:26px}.steps{padding:0 14px 45px}.steps-grid{grid-template-columns:1fr}.step{padding:19px}.step h3{margin:12px 0 5px}.footer-bottom{flex-direction:column}.modal-cover{height:160px}.modal-content{padding:18px}.toast{right:12px;bottom:12px}.footer-in{flex-direction:column}}
+.account-btn .account-label{background:transparent;color:inherit;border-radius:0;min-width:0;padding:0;font-size:inherit}
+@media(max-width:600px){.account-btn .account-label{display:none}}
+</style>
+</head>
+<body>
+<div class="announcement">✦ استثمر في نفسك اليوم — تعلّم مهارة جديدة كل أسبوع</div>
+<header class="header"><div class="header-in">
+<a class="brand" href="#"><span class="brand-icon">🎓</span><span><b>مدرستي</b><small>تعلّم. طبّق. تطوّر.</small></span></a>
+<nav class="nav"><a href="#courses">كل الدورات</a><a href="#why">لماذا مدرستي؟</a><a href="#faq">الأسئلة الشائعة</a></nav>
+<div class="header-right"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" aria-label="ابحث عن دورة أو تصنيف أو مدرّب" placeholder="ابحث عن دورة..."></label><button class="cart-btn account-btn" id="accountBtn" type="button" aria-haspopup="dialog">👤 <span class="account-label">دخول</span></button><button class="cart-btn" id="openCart" aria-haspopup="dialog" aria-controls="cartOverlay">🛍️ السلة <span id="cartCount" aria-live="polite">0</span></button></div>
+</div></header>
+<section class="hero">
+<div><span class="pill"><i class="dot"></i> تعلّم أونلاين — في أي وقت ومن أي مكان</span>
+<h1>مهارة جديدة اليوم،<br><span>فرص أكبر غدًا.</span></h1>
+<p>دورات عملية صُممت لتساعدك على تطوير مهاراتك، وتحويل شغفك إلى إنجازات حقيقية. تعلّم بالوتيرة التي تناسبك.</p>
+<div class="actions"><a href="#courses" class="primary">استكشف الدورات ←</a><a href="#why" class="secondary">▷ كيف تعمل مدرستي؟</a></div>
+<div class="proof"><span style="font-size:22px">👥</span><div><div class="stars">★★★★★ <b style="color:#3e4354">4.9/5</b></div><small>تقييمات تجريبية للعرض فقط</small></div></div></div>
+<div class="hero-art"><div class="lesson-window"><div class="window-top"><i></i><i></i><i></i><span>درس اليوم</span></div><div class="lesson-scene"><div class="shape one"></div><div class="shape two"></div><div class="scene-title">اصنع شيئًا<br>مختلفًا ✦</div><span class="play">▶</span></div><div style="display:flex;justify-content:space-between;align-items:center;padding:14px 7px 5px"><b style="font-size:13px">احتراف Canva من الصفر</b><strong style="color:var(--brand)">89 ر.س</strong></div></div><div class="floating f1"><b>✓ تعلّم بوقتك</b><small>وصول مرن للدروس</small></div><div class="floating f2"><b>★ محتوى عملي</b><small>تطبيق بعد كل درس</small></div></div>
+</section>
+<section class="trust"><div><span class="trust-icon">▷</span><span><b>دروس قصيرة وعملية</b><small>تعلّم وطبّق مباشرة</small></span></div><div><span class="trust-icon">▣</span><span><b>على كل أجهزتك</b><small>جوال أو كمبيوتر</small></span></div><div><span class="trust-icon">♧</span><span><b>شراء آمن</b><small>بعد تفعيل الدفع</small></span></div><div><span class="trust-icon">▤</span><span><b>محتوى منظّم</b><small>مسار واضح للتعلّم</small></span></div></section>
+<section class="section" id="courses"><div class="section-head"><div><span class="eyebrow">اختر مسارك</span><h2>دورات تساعدك على <span>التقدّم</span></h2><p>استكشف نموذجًا تجريبيًا للواجهة؛ بيانات الدورات ليست عروضًا منشورة للبيع بعد.</p></div><span class="demo">نموذج تجريبي — البيانات غير موثّقة</span></div>
+<div class="filters" id="filters"></div><div class="grid" id="courseGrid"></div></section>
+<section class="banner" id="why"><div><span class="eyebrow" style="color:#c8c0ff">رحلتك تبدأ بخطوة</span><h2>ما تحتاج تكون خبيرًا<br>عشان تبدأ.</h2><p>ابدأ من الأساسيات، تعلّم بالتدريج، وطبّق اللي تتعلمه على مشاريعك.</p><a href="#courses" class="primary">اختر دورتك الأولى ←</a></div><div class="banner-points"><div><b>✦ تصميم لمسار تعلّم</b><small>يحتاج إلى إضافة محتوى فعلي</small></div><div><b>◷ واجهة متجاوبة</b><small>يلزم اختبارها على الأجهزة المختلفة</small></div><div><b>↗ محتوى قابل للتطوير</b><small>أضف دروسًا حقيقية قبل الإطلاق</small></div></div></section>
+<section class="steps"><div class="section-head"><div><span class="eyebrow">بكل بساطة</span><h2>ابدأ التعلّم في <span>3 خطوات</span></h2><p>تجربة واضحة من اختيار الدورة حتى بدء التعلّم.</p></div></div><div class="steps-grid"><div class="step"><span class="step-num">01 / اختر</span><h3>اختر دورتك</h3><p>تصفّح الدورات واختر المهارة التي تريد تطويرها.</p></div><div class="step"><span class="step-num">02 / اشترِ</span><h3>أكمل طلبك</h3><p>راجع سلتك وأكمل الدفع بعد تفعيل بوابة الدفع.</p></div><div class="step"><span class="step-num">03 / تعلّم</span><h3>ابدأ التعلّم</h3><p>ادخل إلى دروسك وتعلّم بالوتيرة التي تناسبك.</p></div></div></section>
+<section class="faq" id="faq"><h2>الأسئلة الشائعة</h2><details><summary>هل أستطيع التعلّم من الجوال؟</summary><p>نعم، صُممت هذه الواجهة لتعمل على الجوال والكمبيوتر. تشغيل الدروس الفعلية يحتاج إضافة محتوى الفيديو ونظام وصول آمن.</p></details><details><summary>هل الدفع الإلكتروني مفعّل الآن؟</summary><p>لا. هذه واجهة تجريبية فقط؛ لا تدخل بيانات بطاقتك ولا تحوّل أي مبلغ. يلزم خادم آمن وربط بوابة دفع واختبارها قبل استقبال المدفوعات.</p></details><details><summary>متى أستطيع مشاهدة الدورة؟</summary><p>في النسخة النهائية، يُمنح الوصول بعد التحقق من الدفع. هذا النموذج لا يمنح وصولًا حقيقيًا إلى الدروس.</p></details><details><summary>هل أستطيع استرجاع المبلغ؟</summary><p>لم تبدأ المبيعات في هذا النموذج. قبل الإطلاق، يجب نشر سياسة استرجاع واضحة ومراجعتها وفق الأنظمة المعمول بها.</p></details></section>
+<footer class="footer"><div class="footer-in"><div><a class="brand" href="#"><span class="brand-icon">🎓</span><span><b>مدرستي</b><small>تعلّم. طبّق. تطوّر.</small></span></a><p>مساحة تعليمية تساعدك على اكتساب مهارات جديدة، خطوة بخطوة.</p></div><div><b>تصفّح</b><p><a href="#courses">كل الدورات</a>　·　<a href="#why">عن مدرستي</a>　·　<a href="#faq">الأسئلة الشائعة</a></p><small>سياسة الخصوصية والشروط تحتاج إلى إعداد قبل الإطلاق.</small></div></div><div class="footer-bottom"><span>© 2026 مدرستي — نموذج واجهة تجريبي</span><span>مدى · Apple Pay <b>— غير مفعّلين بعد</b></span></div></footer>
+<div id="toast" class="toast" hidden></div>
+<div class="overlay" id="cartOverlay" hidden><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="drawer-head"><div><h2 id="cartTitle">سلة مشترياتك</h2><span class="muted" id="cartSubtitle">0 منتجات</span></div><button class="close" id="closeCart" aria-label="إغلاق السلة">×</button></div><div class="cart-list" id="cartList"></div><div class="cart-bottom" id="cartBottom"></div></aside></div>
+<div class="overlay" id="modalOverlay" hidden><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></section></div>
+<script>
+// Public client settings for the Madrasati Supabase project.
+// Never place a Supabase Secret key or a Tap secret key in this page.
+window.MADRASATI_CONFIG={url:"https://hzmvtstqkwhetlkqzmfa.supabase.co",publishableKey:"sb_publishable_aiAkUxyGt3vZe-oBzKyALA_5X6t5z13"};
+</script>
+<script type="module">
+const backendConfig=window.MADRASATI_CONFIG||{};
+const backendConfigComplete=typeof backendConfig.url==="string"&&backendConfig.url.startsWith("https://")&&!backendConfig.url.includes("YOUR_")&&typeof backendConfig.publishableKey==="string"&&backendConfig.publishableKey.length>20&&!backendConfig.publishableKey.includes("YOUR_");
+let apiModule=null,backendImportError=null;
+if(backendConfigComplete){try{apiModule=await import("./supabase-client.mjs")}catch(error){backendImportError=error;console.error("Madrasati API module could not load",error)}}
+const supabase=apiModule?.supabase??null;
+const madrasatiApi=apiModule?.madrasatiApi??null;
+const courses=[
+{id:"canva",title:"احتراف Canva من الصفر",category:"التصميم",teacher:"سارة العتيبي",price:89,old:149,rating:"4.9",students:"1,240",duration:"4 ساعات",lessons:28,level:"مبتدئ",accent:"violet",symbol:"✦",featured:true,desc:"تعلّم تصميم منشورات احترافية وهوية بصرية ومحتوى للسوشيال ميديا باستخدام Canva."},
+{id:"excel",title:"Excel العملي للعمل والدراسة",category:"الأعمال",teacher:"محمد الحربي",price:119,old:179,rating:"4.8",students:"986",duration:"6 ساعات",lessons:35,level:"مبتدئ إلى متوسط",accent:"green",symbol:"▦",featured:true,desc:"من الأساسيات إلى الدوال والجداول المحورية وتقارير العمل العملية."},
+{id:"video",title:"صناعة الفيديو بالجوال",category:"صناعة المحتوى",teacher:"ريم القحطاني",price:99,old:null,rating:"4.9",students:"752",duration:"3.5 ساعات",lessons:22,level:"مبتدئ",accent:"orange",symbol:"▶",featured:true,desc:"خطوات تصوير وتحرير فيديوهات جذابة باستخدام هاتفك فقط."},
+{id:"design",title:"أساسيات التصميم الجرافيكي",category:"التصميم",teacher:"نورة السالم",price:149,old:199,rating:"4.7",students:"643",duration:"8 ساعات",lessons:42,level:"مبتدئ",accent:"pink",symbol:"◈",desc:"افهم الألوان والتكوين والطباعة البصرية وطبّقها على مشاريع عملية."},
+{id:"marketing",title:"التسويق بالمحتوى للمبتدئين",category:"التسويق",teacher:"عبدالله الشهري",price:79,old:null,rating:"4.8",students:"1,105",duration:"2.5 ساعات",lessons:18,level:"مبتدئ",accent:"blue",symbol:"↗",desc:"ابنِ خطة محتوى بسيطة، وحدد جمهورك، وقيّم نتائجك بطريقة عملية."},
+{id:"present",title:"عروض تقديمية تلفت الانتباه",category:"الأعمال",teacher:"لينا منصور",price:69,old:null,rating:"4.6",students:"518",duration:"2 ساعات",lessons:16,level:"كل المستويات",accent:"yellow",symbol:"▤",desc:"صمّم عروضًا واضحة وجذابة للدراسة والعمل باستخدام قوالب قابلة للتعديل."}
+];
+const cats=["الكل","التصميم","الأعمال","صناعة المحتوى","التسويق"];
+let active="الكل",query="",cart=[],favorites=[],toastTimer;
+function persist(){}
+const $=id=>document.getElementById(id);
+function toast(msg){$("toast").textContent=msg;$("toast").hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").hidden=true,3500)}
+function renderFilters(){$("filters").innerHTML=cats.map(c=>`<button class="filter ${active===c?"active":""}" data-cat="${c}">${c}</button>`).join("")+`<span class="count">${filtered().length} دورات</span>`;$("filters").querySelectorAll("button").forEach(b=>b.onclick=()=>{active=b.dataset.cat;renderFilters();renderCourses()})}
+function filtered(){return courses.filter(c=>(active==="الكل"||c.category===active)&&[c.title,c.category,c.teacher].some(s=>s.includes(query.trim())))}
+function renderCourses(){const list=filtered();$("courseGrid").innerHTML=list.length?list.map(c=>`<article class="card"><div class="cover ${c.accent}" data-open="${c.id}"><span class="tag">${c.category}</span><button class="save" data-save="${c.id}" aria-label="${favorites.includes(c.id)?"إزالة من المفضلة":"إضافة إلى المفضلة"}" aria-pressed="${favorites.includes(c.id)}">${favorites.includes(c.id)?"♥":"♡"}</button><span class="cover-symbol">${c.symbol}</span></div><div class="body"><div class="meta"><span>${c.level}</span><span class="rating">التقييم غير متاح</span></div><button class="title" data-open="${c.id}">${c.title}</button><div class="instructor">مع ${c.teacher}</div><div class="stats"><span>▷ ${c.lessons} درس</span><span>◷ ${c.duration}</span></div><div class="foot"><div class="price"><strong>${c.price} ر.س</strong>${c.old?`<del>${c.old} ر.س</del>`:""}</div><button class="add ${cart.some(i=>i.id===c.id)?"done":""}" data-add="${c.id}">${cart.some(i=>i.id===c.id)?"✓ أُضيفت":"＋ أضف للسلة"}</button></div></div></article>`).join(""):`<div style="grid-column:1/-1;text-align:center;padding:45px;color:#70798e">لم نجد دورة بهذا الاسم. جرّب كلمة أخرى.</div>`;
+$("courseGrid").querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>add(b.dataset.add));$("courseGrid").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>openCourse(b.dataset.open));$("courseGrid").querySelectorAll("[data-save]").forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.save;if(favorites.includes(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);persist();renderCourses();toast(favorites.includes(id)?"أُضيفت إلى المفضلة":"أُزيلت من المفضلة")})}
+function add(id){const found=cart.find(i=>i.id===id);if(found)found.qty++;else cart.push({id,qty:1});persist();updateCart();renderCourses();toast("أُضيفت الدورة إلى سلتك")}
+function updateCart(){persist();$("cartCount").textContent=cart.reduce((n,i)=>n+i.qty,0);$("cartSubtitle").textContent=cart.reduce((n,i)=>n+i.qty,0)+" منتجات";renderCart()}
+function total(){return cart.reduce((n,i)=>n+courses.find(c=>c.id===i.id).price*i.qty,0)}
+function renderCart(){if(!cart.length){$("cartList").innerHTML=`<div class="empty"><span style="font-size:42px">🛍️</span><b>سلتك فارغة حتى الآن</b><span>اختر دورة وابدأ رحلتك التعليمية.</span></div>`;$("cartBottom").innerHTML=`<button class="primary full" id="browse">تصفّح الدورات</button>`;$("browse").onclick=()=>$("cartOverlay").hidden=true;return}
+$("cartList").innerHTML=cart.map(i=>{const c=courses.find(c=>c.id===i.id);return `<div class="cart-row"><div class="mini-cover cover ${c.accent}">${c.symbol}</div><div class="cart-row-info"><b>${c.title}</b><strong>${c.price} ر.س</strong><div class="qty"><button data-qty="${c.id}" data-delta="-1">−</button><span>${i.qty}</span><button data-qty="${c.id}" data-delta="1">＋</button><button class="remove" data-remove="${c.id}">حذف</button></div></div></div>`}).join("");
+$("cartList").querySelectorAll("[data-qty]").forEach(b=>b.onclick=()=>{const i=cart.find(i=>i.id===b.dataset.qty);i.qty+=Number(b.dataset.delta);if(i.qty<1)cart=cart.filter(x=>x.id!==i.id);updateCart();renderCourses()});$("cartList").querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{cart=cart.filter(i=>i.id!==b.dataset.remove);updateCart();renderCourses()});
+$("cartBottom").innerHTML=`<div class="cart-total"><span>المجموع</span><span>${total().toLocaleString("ar-SA")} ر.س</span></div><p>هذه نسخة تجريبية. لم يتم تحصيل أي مبلغ. يجب ربط بوابة دفع والتحقق من العملية على الخادم قبل إطلاق المتجر.</p><button class="primary full" id="checkout">الدفع غير متاح في النموذج ←</button>`;$("checkout").onclick=()=>toast("الدفع غير مفعّل في النسخة التجريبية. لم يتم تحصيل أي مبلغ.")}
+function openCourse(id){const c=courses.find(c=>c.id===id);if(!c)return;$("modal").innerHTML=`<div style="display:flex;justify-content:flex-end;padding:10px 10px 0"><button class="close" id="closeModal" aria-label="إغلاق تفاصيل الدورة">×</button></div><div class="modal-cover cover ${c.accent}"><span>${c.symbol}</span></div><div class="modal-content"><span class="eyebrow">${c.category} · ${c.level}</span><h2 id="modalTitle">${c.title}</h2><p>${c.desc}</p><p>تقديم: ${c.teacher}</p><div class="modal-details"><span>التقييمات الفعلية غير متاحة</span><span>▷ ${c.lessons} درس (بيانات نموذجية)</span><span>◷ ${c.duration} (تقديري)</span></div><div class="modal-price">${c.price} ر.س</div><div class="notice-box">محتوى وأسعار تجريبية؛ فيديوهات الدورة لم تُرفع بعد، والدفع غير مفعّل.</div><button class="primary full" id="modalAdd">أضف الدورة إلى السلة</button><p style="font-size:10px">هذه بيانات نموذجية للتصميم وليست دورة منشورة أو عرضًا للبيع.</p></div>`;$("modalOverlay").hidden=false;$("closeModal").onclick=()=>$("modalOverlay").hidden=true;$("modalAdd").onclick=()=>{add(id);$("modalOverlay").hidden=true};$("closeModal").onclick=()=>{$("modalOverlay").hidden=true};$("closeModal").focus()}
+$("search").addEventListener("input",e=>{query=e.target.value;renderFilters();renderCourses()});
+$("openCart").onclick=()=>{$("cartOverlay").hidden=false;$("closeCart").focus()};$("closeCart").onclick=()=>{$("cartOverlay").hidden=true;$("openCart").focus()};$("cartOverlay").onclick=e=>{if(e.target===$("cartOverlay")){$("cartOverlay").hidden=true;$("openCart").focus()}};$("modalOverlay").onclick=e=>{if(e.target===$("modalOverlay"))$("modalOverlay").hidden=true};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!$("modalOverlay").hidden){$("modalOverlay").hidden=true;return}if(!$("cartOverlay").hidden){$("cartOverlay").hidden=true;$("openCart").focus()}}});
+
+// Supabase-backed account, catalog, cart, favorites, and owned-courses behavior.
+let backendReady=false,currentSession=null,categoryRows=[],remoteCartRows=[],catalogRequest=0,searchTimer=null;
+cart=[];favorites=[];
+function htmlSafe(value){return String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]))}
+function safeCourse(row){return {...row,title:htmlSafe(row.title),category:htmlSafe(row.category),teacher:htmlSafe(row.teacher),desc:htmlSafe(row.desc),level:htmlSafe(row.level),duration:htmlSafe(row.duration),symbol:htmlSafe(row.symbol)}}
+function updateAccountButton(){const button=$("accountBtn");if(button)button.innerHTML=`👤 <span class="account-label">${currentSession?"حسابي":"دخول"}</span>`}
+function requireBackendAction(){if(!supabase||!madrasatiApi){toast("افتح الصفحة من استضافة HTTPS مع ملف الاتصال المرفق.");openAccount();return false}if(!backendReady){toast("الاتصال بقاعدة البيانات غير جاهز بعد.");return false}return true}
+
+const localRenderCourses=renderCourses;
+renderCourses=function(){
+  localRenderCourses();
+  $("courseGrid").querySelectorAll("[data-add]").forEach(button=>button.onclick=()=>add(button.dataset.add));
+  $("courseGrid").querySelectorAll("[data-save]").forEach(button=>button.onclick=async event=>{
+    event.stopPropagation();
+    if(!requireBackendAction())return;
+    if(!currentSession){toast("سجّل الدخول لحفظ المفضلة بين أجهزتك.");openAccount();return}
+    try{const added=await madrasatiApi.toggleFavorite(button.dataset.save);favorites=await madrasatiApi.getFavorites();renderCourses();toast(added?"أُضيفت إلى المفضلة":"أُزيلت من المفضلة")}
+    catch(error){console.error(error);toast("تعذر تحديث المفضلة. حاول مرة أخرى.")}
+  });
+};
+
+const localRenderFilters=renderFilters;
+renderFilters=function(){
+  localRenderFilters();
+  if(!supabase)return;
+  $("filters").querySelectorAll("button[data-cat]").forEach(button=>button.onclick=()=>{
+    active=button.dataset.cat;
+    const selected=categoryRows.find(row=>row.title===active);
+    loadCatalog(selected?.id??null);
+  });
+};
+
+persist=function(){}; // The connected version stores account data in Postgres, not localStorage.
+total=function(){return remoteCartRows.reduce((sum,row)=>sum+Number(row.courses?.price_sar??0),0)};
+updateCart=function(){
+  $("cartCount").textContent=String(cart.length);
+  $("cartSubtitle").textContent=cart.length+" منتجات";
+  renderCart();
+};
+renderCart=function(){
+  if(!cart.length){
+    $("cartList").innerHTML=`<div class="empty"><span style="font-size:42px">🛍️</span><b>سلتك فارغة حتى الآن</b><span>اختر دورة وابدأ رحلتك التعليمية.</span></div>`;
+    $("cartBottom").innerHTML=`<button class="primary full" id="browse">تصفّح الدورات</button>`;
+    $("browse").onclick=()=>$("cartOverlay").hidden=true;
+    return;
+  }
+  $("cartList").innerHTML=remoteCartRows.map(row=>{
+    const course=row.courses||{};
+    const id=htmlSafe(row.course_id);
+    return `<div class="cart-row"><div class="mini-cover cover ${htmlSafe(course.accent)}">${htmlSafe(course.symbol)}</div><div class="cart-row-info"><b>${htmlSafe(course.title||row.course_id)}</b><strong>${Number(course.price_sar||0).toLocaleString("ar-SA")} ر.س</strong><div class="qty"><span>دورة واحدة</span><button class="remove" data-remove="${id}">حذف</button></div></div></div>`;
+  }).join("");
+  $("cartList").querySelectorAll("[data-remove]").forEach(button=>button.onclick=async()=>{
+    try{await madrasatiApi.removeFromCart(button.dataset.remove);await refreshUserData();updateCart();renderCourses()}
+    catch(error){console.error(error);toast("تعذر حذف الدورة من السلة.")}
+  });
+  $("cartBottom").innerHTML=`<div class="cart-total"><span>المجموع من قاعدة البيانات</span><span>${total().toLocaleString("ar-SA")} ر.س</span></div><p>الدفع غير مفعّل بعد. لن يتم تحصيل مبلغ أو فتح دورة من هذه الصفحة.</p><button class="primary full" id="checkout" disabled aria-disabled="true">الدفع غير متاح حاليًا</button>`;
+};
+add=async function(id){
+  if(!requireBackendAction())return;
+  if(!currentSession){toast("سجّل الدخول لحفظ سلتك.");openAccount();return}
+  try{await madrasatiApi.addToCart(id);await refreshUserData();updateCart();renderCourses();toast("حُفظت الدورة في سلتك")}
+  catch(error){console.error(error);toast("تعذر إضافة الدورة. تحقق من تسجيل الدخول أو حالة الدورة.")}
+};
+
+function accountCloseButton(){return `<div style="display:flex;justify-content:flex-end;padding:10px 10px 0"><button class="close" id="accountClose" aria-label="إغلاق">×</button></div>`}
+function openAccount(mode="signin"){
+  if(!supabase||!madrasatiApi){
+    $("modal").innerHTML=accountCloseButton()+`<div class="modal-content"><span class="eyebrow">تشغيل الصفحة</span><h2 id="modalTitle">تعذر تحميل الاتصال</h2><p>إعداد مشروع Supabase موجود في هذه النسخة. افتح الصفحة من استضافة HTTPS وتأكد من رفع ملف <code>supabase-client.mjs</code> معها.</p></div>`;
+  }else if(!backendReady){
+    $("modal").innerHTML=accountCloseButton()+`<div class="modal-content"><span class="eyebrow">الاتصال</span><h2 id="modalTitle">تعذر الاتصال</h2><p>تحقق من إعدادات Supabase، ثم أعد تحميل الصفحة.</p></div>`;
+  }else if(currentSession){
+    $("modal").innerHTML=accountCloseButton()+`<div class="modal-content"><span class="eyebrow">حسابك</span><h2 id="modalTitle">مرحبًا بك</h2><p>${htmlSafe(currentSession.user.email)}</p><div class="actions"><button class="secondary" id="myCoursesAction">دوراتي</button><button class="secondary" id="signOutAction">تسجيل الخروج</button></div></div>`;
+    $("myCoursesAction").onclick=showMyCourses;
+    $("signOutAction").onclick=async()=>{try{await supabase.auth.signOut();currentSession=null;await refreshUserData();updateAccountButton();updateCart();renderCourses();openAccount()}catch(error){console.error(error);toast("تعذر تسجيل الخروج.")}};
+  }else{
+    const signup=mode==="signup";
+    $("modal").innerHTML=accountCloseButton()+`<div class="modal-content"><span class="eyebrow">حساب مدرستي</span><h2 id="modalTitle">${signup?"إنشاء حساب":"تسجيل الدخول"}</h2><div class="actions"><button class="secondary" id="showSignIn" type="button">دخول</button><button class="secondary" id="showSignUp" type="button">حساب جديد</button></div><form id="accountForm"><label>البريد الإلكتروني<input id="accountEmail" type="email" autocomplete="email" required style="display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:7px 0 14px"></label>${signup?`<label>الاسم<input id="accountName" type="text" maxlength="80" autocomplete="name" required style="display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:7px 0 14px"></label>`:""}<label>كلمة المرور<input id="accountPassword" type="password" minlength="8" autocomplete="${signup?"new-password":"current-password"}" required style="display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:7px 0 14px"></label><button class="primary full" type="submit">${signup?"إنشاء الحساب":"دخول"}</button><p id="accountStatus" role="status"></p></form></div>`;
+    $("showSignIn").onclick=()=>openAccount("signin");
+    $("showSignUp").onclick=()=>openAccount("signup");
+    $("accountForm").onsubmit=async event=>{
+      event.preventDefault();
+      const status=$("accountStatus");
+      status.textContent="جارٍ الاتصال…";
+      try{
+        if(signup){
+          const result=await madrasatiApi.signUp($("accountEmail").value.trim(),$("accountPassword").value,$("accountName").value.trim());
+          if(!result.session){status.textContent="أُرسل طلب التسجيل. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.";return}
+        }else await madrasatiApi.signIn($("accountEmail").value.trim(),$("accountPassword").value);
+        const {data}=await supabase.auth.getSession();currentSession=data.session;await refreshUserData();updateAccountButton();updateCart();renderCourses();openAccount();toast("تم تسجيل الدخول")
+      }catch(error){console.error(error);status.textContent="تعذر إكمال الطلب. راجع البريد وكلمة المرور وحاول مجددًا."}
+    };
+  }
+  $("modalOverlay").hidden=false;
+  $("accountClose").onclick=()=>$("modalOverlay").hidden=true;
+  $("accountClose").focus();
+}
+
+async function showMyCourses(){
+  if(!currentSession){openAccount();return}
+  try{
+    const rows=await madrasatiApi.myCourses();
+    const contents=rows.length?rows.map(row=>{const c=row.courses||{};return `<article class="cart-row"><div class="mini-cover cover ${htmlSafe(c.accent||"violet")}">${htmlSafe(c.symbol||"✓")}</div><div class="cart-row-info"><b>${htmlSafe(c.title||row.course_id)}</b><small>${htmlSafe(c.duration||"")} · ${Number(c.lesson_count||0)} درس</small></div></article>`}).join(""):`<div class="empty"><b>لا توجد دورات مشتراة في الحساب بعد.</b><span>ستظهر هنا بعد تأكيد الدفع من الخادم.</span></div>`;
+    $("modal").innerHTML=accountCloseButton()+`<div class="modal-content"><span class="eyebrow">مساحة التعلم</span><h2 id="modalTitle">دوراتي</h2><div class="cart-list">${contents}</div><button class="secondary full" id="backToAccount">حسابي</button></div>`;
+    $("accountClose").onclick=()=>$("modalOverlay").hidden=true;
+    $("backToAccount").onclick=()=>openAccount();
+  }catch(error){console.error(error);toast("تعذر تحميل دوراتك.")}
+}
+
+async function refreshUserData(){
+  if(!supabase||!currentSession){cart=[];favorites=[];remoteCartRows=[];return}
+  const [cartRows,favoriteIds]=await Promise.all([madrasatiApi.getCart(),madrasatiApi.getFavorites()]);
+  remoteCartRows=cartRows;cart=cartRows.map(row=>({id:row.course_id,qty:1}));favorites=favoriteIds;
+}
+async function loadCatalog(categoryId=null){
+  if(!backendReady)return;
+  const request=++catalogRequest;
+  try{
+    const rows=await madrasatiApi.courses({query,categoryId});
+    if(request!==catalogRequest)return;
+    courses.splice(0,courses.length,...rows.map(safeCourse));
+    renderFilters();renderCourses();
+  }catch(error){console.error(error);toast("تعذر تحميل الدورات من قاعدة البيانات.")}
+}
+async function startBackend(){
+  cart=[];favorites=[];remoteCartRows=[];updateAccountButton();
+  if(!supabase||!madrasatiApi){updateCart();renderCourses();return}
+  try{
+    const [categoriesResult,sessionResult]=await Promise.all([madrasatiApi.categories(),supabase.auth.getSession()]);
+    categoryRows=categoriesResult.map(row=>({...row,title:htmlSafe(row.title)}));
+    cats.splice(1,cats.length-1,...categoryRows.map(row=>row.title));
+    currentSession=sessionResult.data.session;
+    const rows=await madrasatiApi.courses();
+    courses.splice(0,courses.length,...rows.map(safeCourse));
+    backendReady=true;
+    await refreshUserData();
+    updateAccountButton();renderFilters();renderCourses();updateCart();
+    $("accountBtn").onclick=()=>openAccount();
+    supabase.auth.onAuthStateChange((_event,newSession)=>{
+      currentSession=newSession;updateAccountButton();
+      window.setTimeout(async()=>{try{await refreshUserData();updateCart();renderCourses()}catch(error){console.error(error);toast("تعذر تحديث بيانات الحساب.")}},0);
+    });
+  }catch(error){backendReady=false;console.error(error);updateAccountButton();updateCart();toast("تعذر الاتصال بـSupabase. تحقق من الشبكة وإعدادات Auth للموقع المستضاف.")}
+}
+
+$("accountBtn").onclick=()=>openAccount();
+$("search").addEventListener("input",()=>{if(!backendReady)return;clearTimeout(searchTimer);searchTimer=window.setTimeout(()=>loadCatalog(categoryRows.find(row=>row.title===active)?.id??null),220)});
+renderFilters();renderCourses();updateCart();
+startBackend();
+
+</script>
+<script>
+if ("serviceWorker" in navigator && location.protocol === "https:") {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(error => console.error("Madrasati offline shell unavailable", error)));
+}
+</script>
+</body></html>
